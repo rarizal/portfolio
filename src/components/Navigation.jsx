@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Kebab from "../assets/images/kebab-button.svg";
 
-export default function Navigation2() {
+export default function Navigation() {
 	const [toggle, setToggle] = useState(true);
 	const location = useLocation();
 
@@ -84,16 +84,16 @@ export default function Navigation2() {
 			<div className="overlay" style={{ display: toggle ? "none" : "" }}>
 				<div className="mobile-kebab">
 					{" "}
-					<img
+					{/* <img
 						src={Kebab}
 						height={"35px"}
 						alt="Kebab Button"
 						onClick={() => setToggle(!toggle)}
-					/>
+					/> */}
 				</div>
 				<div className="mobile-menu">
 					<nav>
-						<ul className="menu-container-mobile heading-5">
+						<ul className="menu-container-mobile">
 							<li
 								style={{
 									color: checkLocation("/identity")
@@ -101,7 +101,10 @@ export default function Navigation2() {
 										: "inherit",
 								}}
 							>
-								<Link to="/identity">Identity</Link>
+								<Link to="/identity">
+									Identity{" "}
+									{checkLocation("/identity") ? " •" : ""}
+								</Link>
 							</li>
 							<li
 								style={{
@@ -110,7 +113,10 @@ export default function Navigation2() {
 										: "inherit",
 								}}
 							>
-								<Link to="/portfolio">Portfolio</Link>
+								<Link to="/portfolio">
+									Portfolio{" "}
+									{checkLocation("/portfolio") ? " •" : ""}
+								</Link>
 							</li>
 							<li
 								style={{
@@ -119,7 +125,10 @@ export default function Navigation2() {
 										: "inherit",
 								}}
 							>
-								<Link to="/bookmark">Bookmarks</Link>
+								<Link to="/bookmark">
+									Bookmarks{" "}
+									{checkLocation("/bookmark") ? " •" : ""}
+								</Link>
 							</li>
 							<li
 								style={{
@@ -128,7 +137,10 @@ export default function Navigation2() {
 										: "inherit",
 								}}
 							>
-								<Link to="/thought">Thoughts</Link>
+								<Link to="/thought">
+									Thoughts{" "}
+									{checkLocation("/thought") ? " •" : ""}
+								</Link>
 							</li>
 							<li
 								style={{
@@ -137,7 +149,10 @@ export default function Navigation2() {
 										: "inherit",
 								}}
 							>
-								<Link to="/resume">Resume</Link>
+								<Link to="/resume">
+									Resume{" "}
+									{checkLocation("/resume") ? " •" : ""}
+								</Link>
 							</li>
 						</ul>
 					</nav>
