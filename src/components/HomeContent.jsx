@@ -9,7 +9,7 @@ export default function HomeContent() {
 					<img src={Image} alt="Something" />
 				</div>
 			</div>
-			<div className="content-list-b heading-1">Code Portfolio</div>
+			<div className="content-list-b text-style_1">Code Portfolio</div>
 		</div>
 	);
 }

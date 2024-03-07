@@ -18,7 +18,7 @@ export default function Navigation() {
 		<div>
 			{/* Navigation in desktop */}
 			<nav>
-				<ul className="menu-container heading-5">
+				<ul className="menu-container text-style_5 fw-semibold">
 					<li
 						style={{
 							color: checkLocation("/identity")

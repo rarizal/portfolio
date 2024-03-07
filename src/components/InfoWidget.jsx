@@ -1,31 +1,32 @@
 import React from "react";
-import useViewport from "./hooks/useViewport";
 
 export default function InfoWidget() {
-	const { width, height } = useViewport();
-
 	return (
 		<div className="widget-container">
 			<div className="widget-list ">
-				<div className="widget-title">About</div>
-				<div className="widget-content">
+				<div className="widget-title text-style_5 fw-medium gray">
+					About
+				</div>
+				<div className="text-style_5 fw-regular black">
 					Rizal Khanafi <br />
 					Software Developer <br />
 					Portfolio 2023-2024 <br />
-					{/* Width: {width} <br />
-					Height: {height} */}
 				</div>
 			</div>
 			<div className="widget-list ">
-				<div className="widget-title">Contact</div>
-				<div className="widget-content">
+				<div className="widget-title text-style_5 fw-medium gray">
+					Contact
+				</div>
+				<div className="text-style_5 fw-regular black">
 					hello@rizal.dev <br />
 					@rzlknfi
 				</div>
 			</div>
 			<div className="widget-list">
-				<div className="widget-title">Information</div>
-				<div className="widget-content">
+				<div className="widget-title text-style_5 fw-medium gray">
+					Information
+				</div>
+				<div className="text-style_5 fw-regular black">
 					www.rizal.dev <br />
 					linked.in/rizalkhanafi <br />
 					github.com/rarizal
